@@ -82,11 +82,11 @@ abline(korKoficientas, col="red", lwd=2)
 # 9 uzduotis
 x <- rnorm(500, mean=0.5, sd=2)
 # a
-lol1 <- mean(x) + c(-1,1) * qnorm(0.99) * 2 / sqrt(length(x)); lol1
+lol1 <- mean(x) + c(-1,1) * qnorm(0.99) * 2 / sqrt(length(x))
 # b
-lol2 <- mean(x) + c(-1,1) * qt(0.95, df=length(x)-1) * sd(x) / sqrt(length(x)); lol2
+lol2 <- mean(x) + c(-1,1) * qt(0.95, df=length(x)-1) * sd(x) / sqrt(length(x))
 # c
-lol3 <- mean(x) + c(-1,1) * qt(0.95, df=length(x)-1) * sd(x) / sqrt(length(x)); lol3
+lol3 <- mean(x) + c(-1,1) * qt(0.95, df=length(x)-1) * sd(x) / sqrt(length(x))
 t.test(x, mu=1, alternative="two.sided")
 
 
